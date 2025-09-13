@@ -1,0 +1,33 @@
+## Check if Node.js is installed:
+node -v
+
+## Check if npm is installed
+npm -v
+
+## If not installed, download from 👉 https://nodejs.org
+ and install.
+
+## Navigate to your project folder
+cd path/to/your/project
+
+## Initialize npm (if not already done). This creates a package.json file to manage dependencies.
+npm init -y
+
+## Install Sass
+npm install sass --save-dev
+
+## Verify Sass installation
+npx sass --version
+
+## Try compiling a Sass file. Create a file: style.scss
+$color: #3498db;
+
+body {
+  background-color: $color;
+}
+
+## Compile it into CSS:
+npx sass style.scss style.css
+
+## Automatically recompile when you save changes:
+npx sass --watch style.scss:style.css
